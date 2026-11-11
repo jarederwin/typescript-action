@@ -25,7 +25,6 @@ export async function run(): Promise<void> {
     if (error instanceof Error) core.setFailed(error.message)
   }
 }
-
 // ❌ FAILS PRETTIER Check
 export   const calculateTotal =(price:number, tax:number)=>
 {
@@ -44,3 +43,4 @@ export const getUserData = (userId:any) => {
     id:userId
   };
 };
+
