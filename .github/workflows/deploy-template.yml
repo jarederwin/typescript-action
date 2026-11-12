@@ -6,10 +6,10 @@ on:
         required: true
         type: string
         description: "The targeted GitHub environment name (e.g., dev, uat, prod)"
-      run-id:
+      runid:
         required: true
         type: string
-        description: "run-id input"
+        description: "runid input"
 permissions:
   contents: read
   actions: read
@@ -27,7 +27,7 @@ jobs:
         with:
           name: node-app
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          run-id: ${{ inputs.run-id }}
+          runid: ${{ inputs.runid }}
       - name: Verify Build Artifact
         run: test -f dist/index.js
        # 2. Copy compiled dist/, package.json, and package-lock.json to the VM
