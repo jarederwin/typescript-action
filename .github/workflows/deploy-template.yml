@@ -27,7 +27,7 @@ jobs:
         with:
           name: node-app
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          runid: ${{ inputs.runid }}
+          run-id: ${{ inputs.run-id }}
       - name: Verify Build Artifact
         run: test -f dist/index.js
        # 2. Copy compiled dist/, package.json, and package-lock.json to the VM
