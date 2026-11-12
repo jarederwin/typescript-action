@@ -6,10 +6,10 @@ on:
         required: true
         type: string
         description: "The targeted GitHub environment name (e.g., dev, uat, prod)"
-      runid:
+      run-id:
         required: true
         type: string
-        description: "runid input"
+        description: "run-id input"
 permissions:
   contents: read
   actions: read
