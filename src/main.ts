@@ -35,7 +35,7 @@ export   const calculateTotal =(price:number, tax:number)=>
 
 // ❌ FAILS ESLINT Check
 export const getUserData = (userId:any) => {
-  const secretToken = "12345";
+  // const secretToken = "12345";
  
   let username = "Alex";
  
